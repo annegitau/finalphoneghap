@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Place searches</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+		<!-- Path to your custom app styles-->
+		<link rel="stylesheet"  href="css/jquery.mobile.structure.css" />
+		<link rel="stylesheet" href="css/jquery.mobile.theme.css" />
+        <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+            
+		<script src="scripts/jquery.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+        <script type="text/javascript" src="scripts/index.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript"src="js/materialize.min.js"></script>
+		<!-- your scripts here -->
+		
+		<script src="scripts/jquery.mobile.js"></script>
+      <script>
+			var userAgent = navigator.userAgent + '';
+			if (userAgent.indexOf('iPhone') > -1) {
+				document.write('<script src="js/lib/cordova-iphone.js"></sc' + 'ript>');
+				var mobile_system = 'iphone';
+			} else if (userAgent.indexOf('Android') > -1) {
+				document.write('<script src="js/lib/cordova-android.js"></sc' + 'ript>');
+				var mobile_system = 'android';
+			} else {
+				var mobile_system = '';
+			}
+		</script>
+
+        
+		
+        <title>ChurchLink</title>
+        
+    </head>
+  <body>
+	<div>
+		<nav>
+			<div class="navbar-wrapper container">
+				<ul class="left">
+					<li><a href="index.php" class="brand-logo">Places Link</a></li>
+				</ul>
+				<ul class="right">
+					<li><a href="logout.php">logout</a> </li>
+				</ul>
+            </div>
+        </nav>
+	
+	
+    </div><!--header-->
+	<div class="container" data-role="content" style="text-shadow: none">
+            <div class="row">
+                <div class="col s12">
+                    <div class="card-panel">
+				        <table>
+                            <tr>
+                                <td><a href="mosque.html" ><img src="mosque.png"></a></td>
+                                <td><a href="places.html" ><img src="church.png"></a></td>
+                            <tr>
+                                <td><a href="mosque.html" >Mosques</a></td>
+                                <td><a href="places.html" >Churches</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="schools.html" ><img src="school.png"></a></td>
+                                <td><a href="restaurants.html"><img src="rest.png"></a></td>
+                                
+							</tr>
+                            <tr>                                
+                                <td><a href="schools.html" >Schools</a></td>
+                                <td><a href="restaurants.html">Restaurants</a></td>
+							</tr>
+						</table>
+                    </div>
+                </div>
+            </div>
+        </div><!--content-->	        			
+  </body>
+</html>
